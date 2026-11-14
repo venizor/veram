@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>VERAM — Wear Your Vibe</title>
+  <meta name="description" content="VERAM — premium oversized streetwear. Original prints, French terry cotton, made in India. Minimal style. Maximum attitude." />
+  <meta name="theme-color" content="#0c0a08" />
+  <script>try{var t=localStorage.getItem("veram-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f3dcae" />
+        <stop offset=".45" stop-color="#c8a46a" />
+        <stop offset="1" stop-color="#7d5a2c" />
+      </linearGradient>
+      <symbol id="vr-mark" viewBox="0 0 100 60">
+        <polygon points="0,0 15,0 30,40 44,0 51,0 33,60 27,60" />
+        <path fill-rule="evenodd" d="M50 0H80C92 0 99 7 99 18C99 28 93 34 84 36L100 60H86L71 37H62V60H50ZM62 11V26H79C84 26 87 23 87 18.5C87 14 84 11 79 11Z" />
+      </symbol>
+      <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0C12.8 7.2 16.8 11.2 24 12C16.8 12.8 12.8 16.8 12 24C11.2 16.8 7.2 12.8 0 12C7.2 11.2 11.2 7.2 12 0Z" /></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M5 8h14l-1 13H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2" /></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 12h16m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M5 12h14" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="m6 6 12 12M18 6 6 18" /></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" /></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" /></g></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 20l1.2-3.6A8 8 0 1 1 8 19.1L4 20Zm5-11c0 3.5 2.5 6 6 6l1-1.6-2-1-1 1c-1-.4-2-1.4-2.4-2.4l1-1-1-2L9 9Z" /></symbol>
+    </defs>
+  </svg>
+
+  <!-- ========== ANNOUNCEMENT ========== -->
+  <div class="announce" role="region" aria-label="Announcements">
+    <div class="announce__track">
+      <span>Online orders now open</span><svg><use href="#spark" /></svg>
+      <span>Drop 01 — The Epics is live</span><svg><use href="#spark" /></svg>
+      <span>Oversized fit · French terry cotton</span><svg><use href="#spark" /></svg>
+      <span>Ships across India</span><svg><use href="#spark" /></svg>
+      <span>Online orders now open</span><svg><use href="#spark" /></svg>
+      <span>Drop 01 — The Epics is live</span><svg><use href="#spark" /></svg>
+      <span>Oversized fit · French terry cotton</span><svg><use href="#spark" /></svg>
+      <span>Ships across India</span><svg><use href="#spark" /></svg>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" data-header>
+    <div class="header__inner">
+      <button class="burger" data-menu-open aria-label="Open menu"><span></span><span></span></button>
+      <a href="#top" class="brand" aria-label="VERAM home">
+        <img class="brand__badge" src="assets/img/logo-badge.png" alt="" width="40" height="40" />
+        <span class="wordmark">VER<span class="lam"></span>M</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#shop">Shop</a>
+        <a href="#story">The Karna Tee</a>
+        <a href="#about">Our Story</a>
+        <a href="#fit">Fit Guide</a>
+        <a href="#reels">Reels</a>
+        <a href="#help">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-btn" data-theme-toggle aria-label="Switch to light theme">
+          <svg class="ico ico--sun"><use href="#i-sun" /></svg>
+          <svg class="ico ico--moon"><use href="#i-moon" /></svg>
+        </button>
+        <button class="bag-btn" data-cart-open aria-label="Open bag">
+          <span class="bag-btn__label">Bag</span>
+          <svg class="ico"><use href="#i-bag" /></svg>
+          <span class="bag-btn__count" data-cart-count>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="menu" data-menu aria-hidden="true">
+    <div class="menu__top">
+      <span class="mono">Menu</span>
+      <button class="icon-btn" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close" /></svg></button>
+    </div>
+    <nav class="menu__links">
+      <a href="#shop" data-menu-link><i>01</i>Shop the drop</a>
+      <a href="#story" data-menu-link><i>02</i>The Karna Tee</a>
+      <a href="#about" data-menu-link><i>03</i>Our story</a>
+      <a href="#fit" data-menu-link><i>04</i>Fit guide</a>
+      <a href="#reels" data-menu-link><i>05</i>Reels</a>
+      <a href="#help" data-menu-link><i>06</i>How to order</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="https://www.instagram.com/veram.clothing/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig" /></svg>@veram.clothing</a>
+      <span class="mono">Wear your vibe.</span>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__meta">
+        <span class="mono">Drop 01 / The Epics</span>
+        <span class="mono live"><i></i>Orders open</span>
+      </div>
+
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            <span class="line"><span>Wear the</span></span>
+            <span class="line"><em>legend,</em></span>
+            <span class="line"><span>not the</span></span>
+            <span class="line"><span>trend.</span></span>
+          </h1>
+          <p class="hero__lede">Oversized streetwear printed with stories worth wearing. Heavy French terry, a drop‑shoulder cut, and original art on every piece.</p>
+          <div class="hero__ctas">
+            <a href="#shop" class="btn btn--gold" data-magnetic>
+              <span>Shop Drop 01</span><svg class="ico"><use href="#i-arrow" /></svg>
+            </a>
+            <a href="#fit" class="btn btn--ghost">Find my size</a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt>06</dt><dd>Styles in Drop 01</dd></div>
+            <div><dt>S–XXL</dt><dd>Oversized fits</dd></div>
+            <div><dt>100%</dt><dd>Cotton French terry</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="frame frame--main" data-parallax="0.06">
+            <img src="assets/img/hero-model.jpg" alt="Indian streetwear model wearing a black oversized heavyweight tee" fetchpriority="high" />
+            <figcaption><span class="mono">No. 01</span><span>Jet black, oversized</span></figcaption>
+            <i class="tick tl"></i><i class="tick tr"></i><i class="tick bl"></i><i class="tick br"></i>
+          </figure>
+          <figure class="frame frame--small" data-parallax="-0.1">
+            <img src="assets/img/rack-collection.jpg" alt="VERAM collection rack in luxury boutique" />
+            <figcaption><span class="mono">No. 02</span><span>Every colourway</span></figcaption>
+          </figure>
+          <div class="seal" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="seal__ring">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+              <text><textPath href="#circ">OVERSIZED · FRENCH TERRY · MADE IN INDIA · WEAR YOUR VIBE · </textPath></text>
+            </svg>
+            <img class="seal__logo" src="assets/img/logo-badge.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__wordmark" aria-hidden="true"><span>VER<span class="lam"></span>M</span></div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <section class="marquee" aria-label="Brand pillars">
+      <div class="marquee__track">
+        <span>Premium tees</span><svg><use href="#spark" /></svg>
+        <em>Unique designs</em><svg><use href="#spark" /></svg>
+        <span>Everyday style</span><svg><use href="#spark" /></svg>
+        <em>Wear your vibe</em><svg><use href="#spark" /></svg>
+        <span>Premium tees</span><svg><use href="#spark" /></svg>
+        <em>Unique designs</em><svg><use href="#spark" /></svg>
+        <span>Everyday style</span><svg><use href="#spark" /></svg>
+        <em>Wear your vibe</em><svg><use href="#spark" /></svg>
+      </div>
+    </section>
+
+    <!-- ========== MANIFESTO ========== -->
+    <section class="manifesto">
+      <div class="manifesto__def reveal">
+        <span class="mono">ve·ram</span>
+        <span class="mono dim">/ˈviː.rəm/ — noun</span>
+      </div>
+      <p class="manifesto__text" data-words>
+        Valour. The quiet courage to wear who you are. We take the stories we grew up on — the archer, the charioteer, the flute player — and cut them into clothes you can live in. Minimal style. Maximum attitude.
+      </p>
+      <div class="manifesto__sig reveal">
+        <svg class="vr" viewBox="0 0 100 60"><use href="#vr-mark" /></svg>
+        <span class="mono">Est. 2026 — Made in India</span>
+      </div>
+    </section>
+
+    <!-- ========== SHOP ========== -->
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 01 ) — Shop</span>
+          <h2 class="h2">Drop 01<br /><em>The Epics</em></h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter products" data-filters>
+          <button role="tab" class="chip is-active" data-filter="all">All</button>
+          <button role="tab" class="chip" data-filter="mythic">Mythic</button>
+          <button role="tab" class="chip" data-filter="mindset">Mindset</button>
+          <button role="tab" class="chip" data-filter="essentials">Essentials</button>
+        </div>
+      </div>
+      <div class="grid" data-grid></div>
+      <p class="shop__note mono">All tees: oversized drop‑shoulder fit · S to XXL · <a href="#fit">Size guide →</a></p>
+    </section>
+
+    <!-- ========== STORY / FEATURE ========== -->
+    <section class="story" id="story">
+      <div class="story__media">
+        <div class="story__sticky">
+          <figure class="story__frame">
+            <img src="assets/img/karna-hero.jpg" alt="Karna Unbroken oversized tee back print" loading="lazy" />
+            <button class="hotspot" style="--x:49%;--y:30%" data-tip="Thick ribbed collar that holds its shape wash after wash."><span></span></button>
+            <button class="hotspot" style="--x:24%;--y:42%" data-tip="Drop‑shoulder seam for the oversized silhouette."><span></span></button>
+            <button class="hotspot" style="--x:55%;--y:56%" data-tip="Heavy French terry cotton — soft inside, smooth outside."><span></span></button>
+            <div class="tooltip" data-tooltip></div>
+          </figure>
+          <span class="story__index mono" data-story-index>01 / 03</span>
+        </div>
+      </div>
+      <div class="story__panels">
+        <div class="story__intro">
+          <span class="mono eyebrow">( 02 ) — The hero piece</span>
+          <h2 class="h2">The <em>Karna</em> Tee</h2>
+          <p class="lede">The most generous warrior of the Mahabharata, at the moment he refused to give up. Printed edge to edge across the back — so the story walks in after you.</p>
+        </div>
+        <article class="panel" data-panel="1">
+          <span class="panel__num">01</span>
+          <h3>Art that covers the back</h3>
+          <p>An original illustration, printed large and high‑definition across the whole back panel. Rich ember and gold on deep black.</p>
+        </article>
+        <article class="panel" data-panel="2">
+          <span class="panel__num">02</span>
+          <h3>French terry. Real weight.</h3>
+          <p>100% cotton French terry: smooth on the outside, soft loops inside. It drapes heavy, breathes easily and feels like more than a tee.</p>
+        </article>
+        <article class="panel" data-panel="3">
+          <span class="panel__num">03</span>
+          <h3>Cut big on purpose</h3>
+          <p>Dropped shoulders, wide body, longer sleeve. Everyday streetwear proportions that look relaxed, never sloppy.</p>
+          <div class="panel__buy">
+            <div>
+              <span class="mono dim">Karna — Unbroken · Black</span>
+              <strong class="price" data-price-for="karna"></strong>
+            </div>
+            <button class="btn btn--gold" data-quick="karna"><span>Choose size</span><svg class="ico"><use href="#i-arrow" /></svg></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== LOOKBOOK ========== -->
+    <section class="look">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 03 ) — Lookbook</span>
+          <h2 class="h2">Minimal style.<br /><em>Maximum attitude.</em></h2>
+        </div>
+        <a class="link-arrow" href="https://www.instagram.com/veram.clothing/" target="_blank" rel="noopener">@veram.clothing <svg class="ico"><use href="#i-arrow" /></svg></a>
+      </div>
+      <div class="bento">
+        <figure class="bento__a reveal-img"><img src="assets/img/lookbook-street.jpg" alt="Editorial street shot in oversized jet black tee" loading="lazy" /><figcaption><span class="mono">On the street</span>Jet black, oversized, every day.</figcaption></figure>
+        <figure class="bento__b reveal-img"><img src="assets/img/lookbook-friends.jpg" alt="Two friends wearing oversized bone and sky blue tees" loading="lazy" /><figcaption><span class="mono">Everyday</span>Made for the street, the campus and the weekend.</figcaption></figure>
+        <figure class="bento__c reveal-img"><img src="assets/img/lookbook-backprint.jpg" alt="Black oversized tee with detailed mythical warrior back print on steel hanger" loading="lazy" /><figcaption><span class="mono">Back prints</span>The story is on the back.</figcaption></figure>
+        <div class="bento__d">
+          <p class="quote">“Not a logo on a blank. <em>A story you wear.</em>”</p>
+          <span class="mono dim">— The VERAM brief</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OUR STORY ========== -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 04 ) — Our story</span>
+          <h2 class="h2">Started by an artist.<br /><em>Made for the bold.</em></h2>
+        </div>
+      </div>
+      <div class="about__grid">
+        <figure class="founder reveal">
+          <div class="founder__media">
+            <div class="founder__main">
+              <img src="assets/img/founder-full.jpg" onerror="this.onerror=null;this.src='assets/img/founder.jpg'" alt="Ramya Karakavalasa, founder of VERAM" />
+              <i class="tick tl"></i><i class="tick tr"></i><i class="tick bl"></i><i class="tick br"></i>
+            </div>
+            <div class="founder__small">
+              <img src="assets/img/founder-portrait.jpg" onerror="this.onerror=null;this.src='assets/img/founder.jpg'" alt="" />
+            </div>
+            <span class="founder__tag mono">Founder</span>
+          </div>
+          <figcaption>
+            <strong>Ramya Karakavalasa</strong>
+            <span class="mono dim">Founder &amp; CEO · Artist</span>
+            <a class="link-arrow" href="https://www.instagram.com/ramyaangel_55/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig" /></svg>@ramyaangel_55</a>
+          </figcaption>
+        </figure>
+        <div class="about__copy">
+          <p class="about__lead reveal">VERAM began with one simple idea: <em>a tee should say something.</em></p>
+          <p class="reveal">Founded by artist Ramya Karakavalasa, VERAM turns the stories and values that move us — courage, hope, focus — into original art you can wear every day. No stock graphics. No copy‑paste prints. Just premium oversized tees with a point of view.</p>
+          <p class="reveal">The name comes from <em>veeram</em> — valour. It is a reminder that wearing who you are takes a little courage, and that style should feel as good as it looks.</p>
+          <dl class="about__facts reveal">
+            <div><dt>2026</dt><dd>Founded</dd></div>
+            <div><dt>Drop 01</dt><dd>The Epics</dd></div>
+            <div><dt>India</dt><dd>Designed &amp; made</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FIT GUIDE ========== -->
+    <section class="fit" id="fit">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 05 ) — Fit guide</span>
+          <h2 class="h2">Find your<br /><em>fit</em> in 5 seconds.</h2>
+        </div>
+        <div class="unit-toggle" role="group" aria-label="Units">
+          <button class="is-active" data-unit="in">in</button>
+          <button data-unit="cm">cm</button>
+        </div>
+      </div>
+
+      <div class="fit__body">
+        <div class="fit__visual">
+          <svg viewBox="0 0 400 420" class="tee-diagram" aria-hidden="true">
+            <g class="tee-g" data-tee>
+              <path class="tee-shape" d="M138 30 Q200 58 262 30 L360 72 Q378 80 384 98 L398 168 Q400 178 390 180 L326 190 L322 400 Q322 410 312 410 L88 410 Q78 410 78 400 L74 190 L10 180 Q0 178 2 168 L16 98 Q22 80 40 72 Z" />
+              <path class="tee-collar" d="M150 34 Q200 70 250 34" />
+              <path class="tee-seam" d="M74 190 L64 84 M326 190 L336 84" />
+              <g class="dim-line">
+                <line x1="86" y1="150" x2="314" y2="150" />
+                <path d="M86 150l10-6v12zM314 150l-10-6v12z" />
+              </g>
+              <g class="dim-line">
+                <line x1="200" y1="62" x2="200" y2="398" />
+                <path d="M200 62l-6 10h12zM200 398l-6-10h12z" />
+              </g>
+            </g>
+            <text x="200" y="138" class="dim-label" data-dim-chest>20.5"</text>
+            <text x="214" y="280" class="dim-label" data-dim-len transform="rotate(-90 214 280)">27"</text>
+          </svg>
+        </div>
+
+        <div class="fit__panel">
+          <span class="mono dim">Select size</span>
+          <div class="sizes" role="radiogroup" aria-label="Size" data-fit-sizes>
+            <button role="radio" data-size="S">S</button>
+            <button role="radio" data-size="M" class="is-active" aria-checked="true">M</button>
+            <button role="radio" data-size="L">L</button>
+            <button role="radio" data-size="XL">XL</button>
+            <button role="radio" data-size="XXL">XXL</button>
+          </div>
+          <dl class="fit__readout">
+            <div><dt>Length</dt><dd data-r="length">27</dd></div>
+            <div><dt>Chest (flat)</dt><dd data-r="chest">20.5</dd></div>
+            <div><dt>Full chest</dt><dd data-r="full">41.0</dd></div>
+            <div><dt>Fits chest</dt><dd data-r="fits">41</dd></div>
+          </dl>
+          <p class="fit__tip">Oversized by design. Want it closer to the body? <strong>Go one size down.</strong></p>
+          <div class="table-wrap">
+            <table class="size-table">
+              <thead><tr><th>Size</th><th>Fits chest</th><th>Length</th><th>Chest (flat)</th><th>Full chest</th></tr></thead>
+              <tbody data-size-table></tbody>
+            </table>
+          </div>
+          <p class="mono dim small">Length is measured from the highest point of the shoulder to the hem. Chest width is measured flat across the tee. Sizes may vary by ±0.5".</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REELS ========== -->
+    <section class="reels" id="reels">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 06 ) — Reels</span>
+          <h2 class="h2">See it <em>move.</em></h2>
+        </div>
+        <div class="rail-nav">
+          <button class="icon-btn" data-rail-prev aria-label="Previous"><svg class="ico flip"><use href="#i-arrow" /></svg></button>
+          <button class="icon-btn" data-rail-next aria-label="Next"><svg class="ico"><use href="#i-arrow" /></svg></button>
+        </div>
+      </div>
+      <div class="rail" data-rail></div>
+    </section>
+
+    <!-- ========== PILLARS ========== -->
+    <section class="pillars">
+      <ol>
+        <li class="reveal"><span class="mono">01</span><h3>Premium tees</h3><p>Heavy French terry cotton that feels as good on wash 50 as on day one.</p></li>
+        <li class="reveal"><span class="mono">02</span><h3>Unique designs</h3><p>Original art for every piece — no stock prints, no copy‑paste graphics.</p></li>
+        <li class="reveal"><span class="mono">03</span><h3>Everyday style</h3><p>One relaxed cut that works with denim, cargos or shorts.</p></li>
+        <li class="reveal"><span class="mono">04</span><h3>Wear your vibe</h3><p>Pick the story that sounds like you: hope, focus, or fire.</p></li>
+      </ol>
+    </section>
+
+    <!-- ========== HOW TO ORDER + FAQ ========== -->
+    <section class="help" id="help">
+      <div class="section-head">
+        <div>
+          <span class="mono eyebrow">( 07 ) — How to order</span>
+          <h2 class="h2">Three steps.<br /><em>No checkout forms.</em></h2>
+        </div>
+        <a class="link-arrow" href="#" data-wa><svg class="ico"><use href="#i-wa" /></svg>Ask us anything</a>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal"><span class="steps__num">01</span><h3>Pick your tee</h3><p>Choose a design from Drop 01 and tap <em>Choose size</em>. Not sure about fit? The size guide takes five seconds.</p></li>
+        <li class="reveal"><span class="steps__num">02</span><h3>Send your bag</h3><p>Checkout sends your order straight to us on WhatsApp — or copy it and DM <em>@veram.clothing</em> on Instagram.</p></li>
+        <li class="reveal"><span class="steps__num">03</span><h3>We confirm &amp; ship</h3><p>We confirm size, address and payment with you personally, then pack and ship across India.</p></li>
+      </ol>
+
+      <div class="faq">
+        <details class="faq__item" open>
+          <summary>Do you ship across India?<svg class="ico"><use href="#i-plus" /></svg></summary>
+          <p>Yes, we ship to every pin code in India. Shipping is free on orders of ₹1,999 and above; your bag shows how close you are.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Which size should I pick?<svg class="ico"><use href="#i-plus" /></svg></summary>
+          <p>Every tee is cut oversized with a drop shoulder. Take your usual size for the relaxed look, or go one size down for a closer fit. Exact measurements are in the <a class="link-u" href="#fit">fit guide</a>.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Can I exchange if it doesn't fit?<svg class="ico"><use href="#i-plus" /></svg></summary>
+          <p>Yes. Message us on WhatsApp or Instagram after delivery with your order details and we'll help you swap sizes, subject to stock.</p>
+        </details>
+        <details class="faq__item">
+          <summary>How do I care for French terry?<svg class="ico"><use href="#i-plus" /></svg></summary>
+          <p>Wash cold and inside out, skip the bleach, and dry in the shade. Don't iron directly on the print. Treat it well and it keeps its weight and colour for years.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Will designs be restocked?<svg class="ico"><use href="#i-plus" /></svg></summary>
+          <p>Drops are limited runs. If a size sells out, join the Drop 02 list below — waitlist members hear first about anything new.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ========== DROP 02 ========== -->
+    <section class="drop" id="drop02">
+      <div class="drop__bg" aria-hidden="true">
+        <img src="assets/img/drop02-bg.jpg" alt="VERAM Drop 02 design atelier workshop" loading="lazy" />
+      </div>
+      <div class="drop__inner">
+        <span class="mono eyebrow">( 08 ) — Next</span>
+        <h2 class="drop__title">Drop 02 is<br /><em>being forged.</em></h2>
+        <p>Limited runs, no restocks. Get first access 24 hours before anyone else.</p>
+        <form class="drop__form" data-waitlist novalidate>
+          <label class="sr-only" for="wl">Email or WhatsApp number</label>
+          <input id="wl" type="text" placeholder="Email or WhatsApp number" autocomplete="email" required />
+          <button class="btn btn--gold" type="submit"><span>Get early access</span><svg class="ico"><use href="#i-arrow" /></svg></button>
+        </form>
+        <p class="mono small waitlist-msg" data-waitlist-msg aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/img/logo-badge.png" alt="VERAM — Wear your vibe" width="96" height="96" loading="lazy" />
+        <p>Premium streetwear. Oversized tees with stories worth wearing.</p>
+        <div class="footer__social">
+          <a class="icon-btn" href="https://www.instagram.com/veram.clothing/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-ig" /></svg></a>
+          <a class="icon-btn" href="#" data-wa aria-label="WhatsApp"><svg class="ico"><use href="#i-wa" /></svg></a>
+        </div>
+      </div>
+      <div><h4 class="mono">Shop</h4><a href="#shop">Drop 01</a><a href="#shop" data-filter-link="mythic">Mythic</a><a href="#shop" data-filter-link="mindset">Mindset</a><a href="#shop" data-filter-link="essentials">Essentials</a></div>
+      <div><h4 class="mono">Help</h4><a href="#fit">Size guide</a><a href="#help">How to order</a><a href="#help">Shipping</a><a href="#help">Returns &amp; exchanges</a><a href="#about">Our story</a></div>
+      <div><h4 class="mono">Connect</h4><a href="https://www.instagram.com/veram.clothing/" target="_blank" rel="noopener">Instagram</a><a href="https://ig.me/m/veram.clothing" target="_blank" rel="noopener">DM to order</a><a href="#" data-wa>WhatsApp</a></div>
+    </div>
+    <div class="footer__mark" aria-hidden="true">VER<span class="lam"></span>M</div>
+    <div class="footer__base mono">
+      <span>© 2026 VERAM. Made in India.</span>
+      <span>Wear your vibe.</span>
+    </div>
+  </footer>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="scrim" data-scrim></div>
+  <aside class="drawer" data-cart aria-hidden="true" aria-label="Shopping bag">
+    <div class="drawer__head">
+      <h3>Your bag <span class="mono dim" data-cart-count-label>(0)</span></h3>
+      <button class="icon-btn" data-cart-close aria-label="Close bag"><svg class="ico"><use href="#i-close" /></svg></button>
+    </div>
+    <div class="drawer__ship">
+      <span class="mono small" data-ship-msg></span>
+      <div class="meter"><span data-ship-bar></span></div>
+    </div>
+    <ul class="drawer__items" data-cart-items></ul>
+    <div class="drawer__empty">
+      <img class="drawer__logo" src="assets/img/logo-badge.png" alt="" width="88" height="88" />
+      <p>Your bag is empty.<br /><em>Every legend starts somewhere.</em></p>
+      <a href="#shop" class="btn btn--ghost" data-cart-close>Shop Drop 01</a>
+    </div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><strong data-cart-total>₹0</strong></div>
+      <p class="mono dim small">Shipping and taxes calculated at checkout.</p>
+      <button class="btn btn--gold btn--block" data-checkout-wa><svg class="ico"><use href="#i-wa" /></svg><span>Checkout on WhatsApp</span></button>
+      <button class="btn btn--ghost btn--block" data-checkout-ig><svg class="ico"><use href="#i-ig" /></svg><span>Copy order &amp; DM on Instagram</span></button>
+    </div>
+  </aside>
+
+  <!-- ========== QUICK ADD SHEET ========== -->
+  <div class="sheet" data-sheet aria-hidden="true" role="dialog" aria-label="Choose size">
+    <div class="sheet__grip"></div>
+    <button class="icon-btn sheet__close" data-sheet-close aria-label="Close"><svg class="ico"><use href="#i-close" /></svg></button>
+    <div class="sheet__body">
+      <div class="sheet__img"><img data-sheet-img alt="" /></div>
+      <div class="sheet__info">
+        <span class="mono dim" data-sheet-cat></span>
+        <h3 data-sheet-name></h3>
+        <p class="dim" data-sheet-desc></p>
+        <strong class="price" data-sheet-price></strong>
+        <div class="sheet__sizes" data-sheet-sizes></div>
+        <a href="#fit" class="mono small link-u" data-sheet-close>Not sure? Size guide →</a>
+        <button class="btn btn--gold btn--block" data-sheet-add disabled><span>Select a size</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
